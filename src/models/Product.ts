@@ -29,7 +29,7 @@ export class Product {
         return `SKU: ${this.sku}, Name: ${this.name}, Price: $${this.price}`;
     }
 
-   getPriceWithTax(): number {
-    return this.price;
-}
+    getPriceWithTax(): number {
+        return this.price;
+    }
 }
