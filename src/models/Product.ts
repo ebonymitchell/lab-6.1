@@ -4,7 +4,7 @@
 // Properties: sku (string), name (string), price (number).
 
 // blueprint for creating objects (cookie cutter is used to create cookies)
-class Product {
+export class Product {
 
     // the properties of the object (not yet created)
     sku: string;
@@ -26,12 +26,10 @@ class Product {
 
     // any object we create from this class will include this method (displayDetails)
     displayDetails(): string {
-        return `${this.sku} is a ${this.name}, and costs $${this.price}`;
+        return `SKU: ${this.sku}, Name: ${this.name}, Price: $${this.price}`;
     }
 
-    getPriceWithTax(): number {
-        let tax = this.price * (.10);
-        return this.price + tax;
-    }
-
+   getPriceWithTax(): number {
+    return this.price;
+}
 }
